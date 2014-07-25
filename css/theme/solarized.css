@@ -1,8 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 /**
  * Solarized Light theme for reveal.js.
  * Author: Achim Staebler
  */
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 @font-face {
   font-family: 'League Gothic';
   src: url("../../lib/font/league_gothic-webfont.eot");
@@ -51,10 +51,16 @@ body {
   line-height: 0.9em;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  text-shadow: none; }
+  text-shadow: none;
+  word-wrap: keep-all !important; }
 
 .reveal h1 {
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
+.reveal h2 {
+  font-family: neoretrofillregular; }
+.reveal h3, .reveal h4 {
+  font-family: neoretrofillregular;
+  color: #3f3e3f; }
 
 /*********************************************
  * LINKS

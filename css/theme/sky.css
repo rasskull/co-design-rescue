@@ -1,10 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
 /**
  * Sky theme for reveal.js.
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
 .reveal a:not(.image) {
   line-height: 1.3em; }
 
@@ -48,10 +48,16 @@ body {
   line-height: 0.9em;
   letter-spacing: -0.08em;
   text-transform: uppercase;
-  text-shadow: none; }
+  text-shadow: none;
+  word-wrap: keep-all !important; }
 
 .reveal h1 {
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
+.reveal h2 {
+  font-family: neoretrofillregular; }
+.reveal h3, .reveal h4 {
+  font-family: neoretrofillregular;
+  color: #3f3e3f; }
 
 /*********************************************
  * LINKS

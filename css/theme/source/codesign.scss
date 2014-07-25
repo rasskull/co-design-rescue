@@ -1,0 +1,192 @@
+/**
+ * Solarized Light theme for reveal.js.
+ * Author: Achim Staebler
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+
+@font-face {
+  font-family: 'neoretrodrawregular';
+  src: url('../../lib/font/NEORD___-webfont.eot');
+  src: url('../../lib/font/NEORD___-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../../lib/font/NEORD___-webfont.woff') format('woff'),
+  url('../../lib/font/NEORD___-webfont.ttf') format('truetype'),
+  url('../../lib/font/NEORD___-webfont.svg#neoretrodrawregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'neoretrofillregular';
+  src: url('../../lib/font/NEORF___-webfont.eot');
+  src: url('../../lib/font/NEORF___-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../../lib/font/NEORF___-webfont.woff') format('woff'),
+  url('../../lib/font/NEORF___-webfont.ttf') format('truetype'),
+  url('../../lib/font/NEORF___-webfont.svg#neoretrofillregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'colaboratelightregular';
+  src: url('../../lib/font/ColabLig-webfont.eot');
+  src: url('../../lib/font/ColabLig-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../../lib/font/ColabLig-webfont.woff') format('woff'),
+  url('../../lib/font/ColabLig-webfont.ttf') format('truetype'),
+  url('../../lib/font/ColabLig-webfont.svg#colaboratelightregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+/**
+ * Solarized colors by Ethan Schoonover
+ */
+html * {
+	color-profile: sRGB;
+	rendering-intent: auto;
+}
+
+// Solarized colors
+$base03:    #002b36;
+$base02:    #073642;
+$base01:    #586e75;
+$base00:    #657b83;
+$base0:     #839496;
+$base1:     #93a1a1;
+$base2:     #eee8d5;
+$base3:     #fdf6e3;
+$yellow:    #b58900;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$green:     #859900;
+
+// Override theme settings (see ../template/settings.scss)
+$mainColor: #fffeff;
+$mainFontSize: 36px;
+$headingColor: #fffeff;
+$headingFont: neoretrodrawregular;
+$headingTextShadow: none;
+$backgroundColor: $base3;
+$linkColor: $blue;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: $magenta;
+$mainFont: colaboratelightregular;
+$subHeadingFont: neoretrofillregular;
+$subSubHeadingFont: neoretrofillregular;
+
+.reveal {
+  .slides {
+    text-align: left;
+  }
+
+}
+
+.title-bg {
+  padding-left: 20px;
+}
+
+.title-bg-lighter {
+  background-color: #FBB716;
+}
+
+.title-bg-light {
+  background-color: #ff4600;
+}
+
+.title-bg-med {
+  background-color: #606060;
+}
+
+.title-bg-dark {
+  background-color: #058CA3;
+}
+
+.title-bg-darker {
+  background-color: #006772;
+}
+
+.title-bg-black {
+  background-color: #000;
+}
+
+.tight-kerning {
+  letter-spacing: -27px;
+}
+
+.med-kerning {
+  letter-spacing: -18px;
+}
+
+.comp {
+  background-color: white;
+  font-size: 14px !important;
+  padding-top: 10px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  font-weight: bold;
+  height: 50px;
+  width: auto;
+  text-align: center;
+  color: #006772;
+  margin: 2px !important;
+  float: left;
+}
+
+.tablet-1 {
+  background-color: #ffff8b;
+}
+
+.tablet-2 {
+  background-color: #ffe100;
+}
+
+.mobile {
+  background-color: #ffba06;
+}
+
+.wide {
+  background-color: #ff8500;
+}
+
+.red {
+  background-color: #ff5100;
+}
+
+.allred {
+  background-color: #ff0200;
+}
+
+.drinking {
+  background-color: transparent;
+  font-size: 90px !important;
+  font-weight: bold !important;
+  color: white;
+  padding: 0 !important;
+  text-transform: uppercase;
+}
+
+.name {
+  color: #e7e7e7;
+  font-size: .8em !important;
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------

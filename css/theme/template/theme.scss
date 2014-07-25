@@ -42,10 +42,23 @@ body {
 
 	text-transform: $headingTextTransform;
 	text-shadow: $headingTextShadow;
+
+    word-wrap: keep-all !important;
 }
 
-.reveal h1 {
-	text-shadow: $heading1TextShadow;
+.reveal {
+  h1 {
+    text-shadow: $heading1TextShadow;
+  }
+
+  h2 {
+    font-family: $subHeadingFont;
+  }
+
+  h3, h4 {
+    font-family: $subSubHeadingFont;
+    color: $subHeadingColor;
+  }
 }
 
 
