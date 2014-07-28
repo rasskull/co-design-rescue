@@ -84,7 +84,7 @@ $headingColor: #fffeff;
 $headingFont: neoretrodrawregular;
 $headingTextShadow: none;
 $backgroundColor: $base3;
-$linkColor: $blue;
+$linkColor: white;
 $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: $magenta;
 $mainFont: colaboratelightregular;
@@ -100,6 +100,14 @@ $subSubHeadingFont: neoretrofillregular;
 
 .title-bg {
   padding-left: 20px;
+}
+
+.title-bg-white {
+   background-color: white;
+}
+
+.title-bg-lightest {
+  background-color: #fffaa6;
 }
 
 .title-bg-lighter {
@@ -124,6 +132,10 @@ $subSubHeadingFont: neoretrofillregular;
 
 .title-bg-black {
   background-color: #000;
+}
+
+.title-bg-p2 {
+  background-color: #ff7900;
 }
 
 .tight-kerning {
